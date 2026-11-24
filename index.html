@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Mahan AI</title>
+<style>
+  :root {
+    --bg: #0A0E17;
+    --surface: #121826;
+    --line: #1E2637;
+    --text: #E8F0FF;
+    --muted: #8B97AD;
+    --cyan: #22D3EE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.4px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 {
+    font-size: 18px;
+    margin: 34px 0 10px;
+    color: var(--cyan);
+    letter-spacing: -0.2px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  strong { color: #fff; }
+  .box {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 18px 0;
+  }
+  .box p:last-child { margin-bottom: 0; }
+  .warn { border-color: #3a2f12; background: #1a1508; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 6px;
+    font-size: 13px;
+    color: var(--cyan);
+  }
+  a { color: var(--cyan); }
+  footer {
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy — Mahan AI</h1>
+  <p class="sub">Ruffian Tech &middot; Last updated: 24 November 2026</p>
+</header>
+
+<p>
+  Mahan AI is an Android assistant app developed by Ruffian Tech
+  ("we", "us"). This page explains what the app does with your data.
+  It is written to be read, not to hide behind legal language.
+</p>
+
+<div class="box">
+  <p>
+    <strong>The short version:</strong> Mahan AI stores your settings,
+    chats and automation history on your own device. When you ask it to
+    perform a task, the screen content it needs to understand is sent to
+    an AI provider to decide the next action. We do not run an account
+    system, we do not sell data, and we do not keep a copy of your screen
+    content on our servers.
+  </p>
+</div>
+
+<h2>1. Information stored on your device</h2>
+<p>
+  The following stays on your phone and is not uploaded anywhere:
+</p>
+<ul>
+  <li>Chat history with the assistant</li>
+  <li>Automation recipes and task history</li>
+  <li>App settings, sleep schedule, blocked-app list</li>
+  <li>Saved contacts you add for auto-reply</li>
+  <li>Crash logs, written to app-private storage</li>
+</ul>
+<p>
+  Uninstalling the app deletes all of it. You can also clear it from the
+  app's settings at any time.
+</p>
+
+<h2>2. Accessibility Service — what it does and why</h2>
+<div class="box warn">
+  <p>
+    Mahan AI uses Android's Accessibility Service. This is the same
+    system feature screen readers use, and it is the only way an app can
+    read what is on screen and tap for you.
+  </p>
+</div>
+<p>
+  <strong>What it is used for:</strong> when you give Mahan AI a task
+  such as "search for X in the gallery and share it on WhatsApp", the
+  service reads the visible on-screen elements (button labels, text
+  fields) so it can decide where to tap.
+</p>
+<p>
+  <strong>What it does not do:</strong> it does not run in the background
+  reading your screen when you have not started a task. Automation only
+  runs after you explicitly start it, and stops when the task ends or
+  when you press the stop button.
+</p>
+<p>
+  <strong>Where the screen data goes:</strong> to understand a screen, a
+  compact list of visible element labels is sent to an AI provider
+  (see section 4). The list contains text labels such as "Send",
+  "Search", "WhatsApp" and their screen coordinates. It is sent only for
+  the duration of the task.
+</p>
+
+<h2>3. Other permissions we request</h2>
+<ul>
+  <li>
+    <strong>Notifications access</strong> — used by the auto-reply feature
+    to detect an incoming message so it can draft a reply.
+  </li>
+  <li>
+    <strong>Microphone</strong> — only while you are using voice input.
+    Audio is processed to text and is not stored on our servers.
+  </li>
+  <li>
+    <strong>Internet</strong> — needed to reach the AI service and to load
+    ads.
+  </li>
+  <li>
+    <strong>Display over other apps</strong> — draws the small floating
+    control panel and the stop button during automation.
+  </li>
+  <li>
+    <strong>Exact alarms</strong> — used for the sleep and wake reminders
+    you set yourself.
+  </li>
+</ul>
+<p>
+  Every permission is requested at the moment it is first needed, and you
+  can refuse any of them. Refusing a permission disables only the feature
+  that depends on it.
+</p>
+
+<h2>4. Third-party services</h2>
+<p>
+  Mahan AI sends requests to the following providers. Each receives only
+  what is needed to answer that one request.
+</p>
+<ul>
+  <li>
+    <strong>Google Gemini</strong> — primary AI provider. Receives your
+    prompt and, during automation, the list of on-screen element labels.
+  </li>
+  <li>
+    <strong>Groq</strong> and <strong>Sarvam AI</strong> — backup AI
+    providers, used only when the primary provider is unavailable. They
+    receive the same request content.
+  </li>
+  <li>
+    <strong>Google AdMob</strong> — serves the ads that keep the app free.
+    AdMob may collect a device advertising identifier. You can reset or
+    delete this identifier in Android Settings &rarr; Google &rarr; Ads.
+  </li>
+</ul>
+<p>
+  We do not control these providers' own data practices. Their policies
+  apply to what they receive:
+  <a href="https://policies.google.com/privacy">Google</a>,
+  <a href="https://groq.com/privacy-policy/">Groq</a>,
+  <a href="https://www.sarvam.ai/privacy-policy">Sarvam AI</a>.
+</p>
+
+<h2>5. What we never collect</h2>
+<ul>
+  <li>We do not create an account and we do not ask for your name, email or phone number.</li>
+  <li>We do not upload your photos, videos, files or chat history.</li>
+  <li>We do not read your messages for advertising.</li>
+  <li>We do not sell or rent data to anyone.</li>
+  <li>We do not track your location.</li>
+</ul>
+
+<h2>6. Financial and payment apps</h2>
+<p>
+  Mahan AI includes an App Block feature. Any app you add to that list is
+  excluded from automation entirely — the assistant will not read or tap
+  inside it. We recommend adding all banking, UPI and payment apps there.
+</p>
+
+<h2>7. Children's privacy</h2>
+<p>
+  Mahan AI is not directed at children under 13. We do not knowingly
+  collect personal information from children. If you believe a child has
+  provided information to the app, contact us and we will help you remove
+  it.
+</p>
+
+<h2>8. Data retention and deletion</h2>
+<p>
+  Because your data lives on your device, you control it completely:
+</p>
+<ul>
+  <li>Clear chat history from the app's settings.</li>
+  <li>Clear automation history from the app's settings.</li>
+  <li>Uninstall the app to remove everything.</li>
+</ul>
+<p>
+  Requests we send to AI providers are not stored by us. If you want a
+  provider to delete what it received, contact that provider directly.
+</p>
+
+<h2>9. Security</h2>
+<p>
+  Traffic between the app and our backend uses HTTPS. App-private storage
+  is protected by Android's own sandboxing. No system is perfectly secure,
+  so avoid using automation on screens containing passwords, card numbers
+  or one-time codes.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+  If this policy changes, the "Last updated" date at the top changes too.
+  Significant changes will be announced in the app.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  Questions about this policy, or a data request:
+  <br>
+  <strong>Ruffian Tech</strong>
+  <br>
+  Email: <a href="mailto:supportruffiantech@gmail.com">supportruffiantech@gmail.com</a>
+</p>
+
+<footer>
+  Mahan AI is developed by Ruffian Tech.
+  Package name: <code>com.stark.ruffian</code>.
+  This page contains no trackers and loads no external resources.
+</footer>
+
+</div>
+</body>
+</html>
